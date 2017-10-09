@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.didikk:sticky-nestedscrollview:1.0.0'
+    compile 'com.github.didikk:sticky-nestedscrollview:1.0.1'
 }
 ```
 
