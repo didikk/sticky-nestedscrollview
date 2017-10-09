@@ -24,7 +24,7 @@
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
             android:tag="sticky"
-            android:text="Pangsa Pasar Alas Kaki Indonesia di Pasar Global"
+            android:text="@string/sample"
             android:textColor="@color/colorAccent"
             android:textSize="18sp"/>
 
