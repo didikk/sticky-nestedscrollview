@@ -119,7 +119,9 @@ public class StickyNestedScrollView extends NestedScrollView {
         int left = v.getLeft();
         while (v.getParent() != getChildAt(0)) {
             v = (View) v.getParent();
-            left += v.getLeft();
+            if (v != null) {
+                left += v.getLeft();
+            }
         }
         return left;
     }
@@ -128,7 +130,9 @@ public class StickyNestedScrollView extends NestedScrollView {
         int top = v.getTop();
         while (v.getParent() != getChildAt(0)) {
             v = (View) v.getParent();
-            top += v.getTop();
+            if (v != null) {
+                top += v.getTop();
+            }
         }
         return top;
     }
@@ -137,7 +141,9 @@ public class StickyNestedScrollView extends NestedScrollView {
         int right = v.getRight();
         while (v.getParent() != getChildAt(0)) {
             v = (View) v.getParent();
-            right += v.getRight();
+            if (v != null) {
+                right += v.getRight();
+            }
         }
         return right;
     }
@@ -146,7 +152,9 @@ public class StickyNestedScrollView extends NestedScrollView {
         int bottom = v.getBottom();
         while (v.getParent() != getChildAt(0)) {
             v = (View) v.getParent();
-            bottom += v.getBottom();
+            if (v != null) {
+                bottom += v.getBottom();
+            }
         }
         return bottom;
     }
